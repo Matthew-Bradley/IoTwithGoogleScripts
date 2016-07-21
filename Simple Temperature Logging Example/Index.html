@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <b>This is the manaual input for the arduino data login.</b>
+    <b>It is used for testing purposes.</b>
+    <fieldset>
+      <legend><b>Manual Input</b></legend>
+      <form action="<?= scriptURL?>" method="post">
+        <fieldset>
+          <legend><b>Temperature Logging</b></legend>
+          <b>Temperature:</b><br>
+          <input type="text" name="Temperature" value="25"><br>
+          <b>Humidity:</b><br>
+          <input type="text" name="Humidity" value="50"><br>
+        </fieldset>
+        <fieldset>
+          <legend><b>General Settings</b></legend>
+          <b>App:</b><br>
+          <input type="text" name="app" value="Temperature Logging">
+          <input type="submit" value="Submit"><br>
+          <b>Key:</b><br>
+          <input type="text" name="key" value="<?= APIKey?>" >
+        </fieldset>
+      </form> 
+    </fieldset>
+  </body>
+</html>
+
